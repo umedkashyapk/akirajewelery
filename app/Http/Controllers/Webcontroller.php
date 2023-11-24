@@ -39,4 +39,9 @@ class Webcontroller extends Controller
     {
        return view('earring');
     }
+
+    public function login()
+    {
+       return view('login');
+    }
 }

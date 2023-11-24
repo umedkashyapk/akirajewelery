@@ -180,7 +180,7 @@
 														<a href=""><span class="menu-item-text">CUSTOM ITEMS</span></a>  
 														<ul class="sub-menu">
 															<li >
-																<a href=""><span class="menu-item-text">CUSTOM ITEMS</span></a>
+																<a href="{{route('login')}}"><span class="menu-item-text">CUSTOM ITEMS</span></a>
 																
 															</li><li >
 																<a href=""><span class="menu-item-text">CATALOG</span></a>
@@ -268,10 +268,19 @@
 																	<h2>REGISTER</h2>
 																	<div class="content">
 																		<div class="email">
+																			<input type="name" class="input-text" placeholder="Name" name="name" id="reg_name" value=""/>
+																		</div>
+																		<div class="email">
+																			<input type="mobile" class="input-text" placeholder="Mobile number" name="mobile" id="reg_mobile" value=""/>
+																		</div>
+																		<div class="email">
 																			<input type="email" class="input-text" placeholder="Email" name="email" id="reg_email" value=""/>
 																		</div>
 																		<div class="password">
 																			<input type="password" class="input-text" placeholder="Password" name="password" id="reg_password"/>
+																		</div>
+																		<div class="password">
+																			<input type="Conf.password" class="input-text" placeholder="Conf. Password" name="Conf.password" id="reg_password"/>
 																		</div>															
 																		<div class="button-register">
 																			<input type="submit" class="button" name="register" value="Register"/>

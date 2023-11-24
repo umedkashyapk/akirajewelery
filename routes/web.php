@@ -26,4 +26,5 @@ Route::get('rings', [Webcontroller::class, 'rings'])->name('rings');
 Route::get('bracelets', [Webcontroller::class, 'bracelets'])->name('bracelets');
 Route::get('necklace', [Webcontroller::class, 'necklace'])->name('necklace');
 Route::get('earring', [Webcontroller::class, 'earring'])->name('earring');
+Route::get('login', [Webcontroller::class, 'login'])->name('login');
 
