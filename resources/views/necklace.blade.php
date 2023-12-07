@@ -53,7 +53,9 @@
 											<div class="tab-content">
 												<div class="tab-pane fade show active" id="layout-grid" role="tabpanel">
 													<div class="products-list grid">
+													
 														<div class="row">
+														@foreach($necklace_list as $necklace_list)
 															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
 																<div class="products-entry clearfix product-wapper">
 																	<div class="products-thumb">
@@ -62,8 +64,8 @@
 																		</div>
 																		<div class="product-thumb-hover">
 																			<a href="shop-details.html">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/cat-8-3.jpg')}}" class="post-image" alt="">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/nk1.jpeg')}}" class="hover-image back" alt="">
+																				<img width="600" height="600" src="{{asset('admin/product/'.$necklace_list->image)}}" class="post-image" alt="">
+																				<img width="600" height="600" src="{{asset('admin/product/'.$necklace_list->image)}}" class="hover-image back" alt="">
 																			</a>
 																		</div>		
 																		<div class="product-button">
@@ -86,333 +88,18 @@
 																			<div class="rating">
 																				<div class="star star-0"></div><span class="count">(0 review)</span>
 																			</div>
-																			<h3 class="product-title"><a href="shop-details.html">Medium Flat Hoops</a></h3>
-																			<span class="price">$150.00</span>
+																			<h3 class="product-title"><a href="shop-details.html">{{$necklace_list->description}}</a></h3>
+																			<span class="price">{{$necklace_list->price}}</span>
 																		</div>
 																	</div>
 																</div>
 															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-																<div class="products-entry clearfix product-wapper">
-																	<div class="products-thumb">
-																		<div class="product-lable">
-																			<div class="onsale">-33%</div>
-																		</div>
-																		<div class="product-thumb-hover border">
-																			<a href="shop-details.html">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/nk2.jpeg')}}" class="post-image" alt="">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/5-2.jpg')}}" class="hover-image back" alt="">
-																			</a>
-																		</div>		
-																		<div class="product-button">
-																			<div class="btn-add-to-cart" data-title="Add to cart">
-																				<a rel="nofollow" href="#" class="product-btn button">Add to cart</a>
-																			</div>
-																			<div class="btn-wishlist" data-title="Wishlist">
-																				<button class="product-btn">Add to wishlist</button>
-																			</div>
-																			<div class="btn-compare" data-title="Compare">
-																				<button class="product-btn">Compare</button>
-																			</div>
-																			<span class="product-quickview" data-title="Quick View">
-																				<a href="#" class="quickview quickview-button">Quick View <i class="icon-search"></i></a>
-																			</span>		
-																		</div>
-																	</div>
-																	<div class="products-content">
-																		<div class="contents text-center">
-																			<div class="rating">
-																				<div class="star star-5"></div><span class="count">(1 review)</span>
-																			</div>
-																			<h3 class="product-title"><a href="shop-details.html">Yilver And Turquoise Earrings</a></h3>
-																			<span class="price">
-																				<del aria-hidden="true"><span>$150.00</span></del> 
-																				<ins><span>$100.00</span></ins>
-																			</span>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-																<div class="products-entry clearfix product-wapper">
-																	<div class="products-thumb">
-																		<div class="product-thumb-hover">
-																			<a href="shop-details.html">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/nk3.jpeg')}}" class="post-image" alt="">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/2-2.jpg')}}" class="hover-image back" alt="">
-																			</a>
-																		</div>		
-																		<div class="product-button">
-																			<div class="btn-add-to-cart" data-title="Add to cart">
-																				<a rel="nofollow" href="#" class="product-btn button">Add to cart</a>
-																			</div>
-																			<div class="btn-wishlist" data-title="Wishlist">
-																				<button class="product-btn">Add to wishlist</button>
-																			</div>
-																			<div class="btn-compare" data-title="Compare">
-																				<button class="product-btn">Compare</button>
-																			</div>
-																			<span class="product-quickview" data-title="Quick View">
-																				<a href="#" class="quickview quickview-button">Quick View <i class="icon-search"></i></a>
-																			</span>		
-																		</div>
-																	</div>
-																	<div class="products-content">
-																		<div class="contents text-center">
-																			<div class="rating">
-																				<div class="star star-0"></div><span class="count">(0 review)</span>
-																			</div>
-																			<h3 class="product-title"><a href="shop-details.html">Bold Pearl Hoop Earrings</a></h3>
-																			<span class="price">$150.00</span>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-																<div class="products-entry clearfix product-wapper">
-																	<div class="products-thumb">
-																		<div class="product-lable">
-																			<div class="onsale">-33%</div>
-																			<div class="hot">Hot</div>
-																		</div>
-																		<div class="product-thumb-hover border">
-																			<a href="shop-details.html">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/nk6.jpeg')}}" class="post-image" alt="">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/6-2.jpg')}}" class="hover-image back" alt="">
-																			</a>
-																		</div>		
-																		<div class="product-button">
-																			<div class="btn-add-to-cart" data-title="Add to cart">
-																				<a rel="nofollow" href="#" class="product-btn button">Add to cart</a>
-																			</div>
-																			<div class="btn-wishlist" data-title="Wishlist">
-																				<button class="product-btn">Add to wishlist</button>
-																			</div>
-																			<div class="btn-compare" data-title="Compare">
-																				<button class="product-btn">Compare</button>
-																			</div>
-																			<span class="product-quickview" data-title="Quick View">
-																				<a href="#" class="quickview quickview-button">Quick View <i class="icon-search"></i></a>
-																			</span>		
-																		</div>
-																	</div>
-																	<div class="products-content">
-																		<div class="contents text-center">
-																			<div class="rating">
-																				<div class="star star-4"></div><span class="count">(2 reviews)</span>
-																			</div>
-																			<h3 class="product-title"><a href="shop-details.html">Bora Armchair</a></h3>
-																			<span class="price">
-																				<del aria-hidden="true"><span>$150.00</span></del> 
-																				<ins><span>$100.00</span></ins>
-																			</span>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-																<div class="products-entry clearfix product-wapper">
-																	<div class="products-thumb">
-																		<div class="product-lable">
-																			<div class="onsale">-23%</div>
-																			<div class="hot">Hot</div>
-																		</div>
-																		<div class="product-thumb-hover">
-																			<a href="shop-details.html">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/nk4.jpeg')}}" class="post-image" alt="">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/3-2.jpg')}}" class="hover-image back" alt="">
-																			</a>
-																		</div>		
-																		<div class="product-button">
-																			<div class="btn-add-to-cart" data-title="Add to cart">
-																				<a rel="nofollow" href="#" class="product-btn button">Add to cart</a>
-																			</div>
-																			<div class="btn-wishlist" data-title="Wishlist">
-																				<button class="product-btn">Add to wishlist</button>
-																			</div>
-																			<div class="btn-compare" data-title="Compare">
-																				<button class="product-btn">Compare</button>
-																			</div>
-																			<span class="product-quickview" data-title="Quick View">
-																				<a href="#" class="quickview quickview-button">Quick View <i class="icon-search"></i></a>
-																			</span>		
-																		</div>
-																	</div>
-																	<div class="products-content">
-																		<div class="contents text-center">
-																			<div class="rating">
-																				<div class="star star-5"></div><span class="count">(5 review)</span>
-																			</div>
-																			<h3 class="product-title"><a href="shop-details.html">Twin Hoops</a></h3>
-																			<span class="price">
-																				<del aria-hidden="true"><span>$100.00</span></del> 
-																				<ins><span>$90.00</span></ins>
-																			</span>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-																<div class="products-entry clearfix product-wapper">
-																	<div class="products-thumb">
-																		<div class="product-lable">
-																			<div class="onsale">-37%</div>
-																			<div class="hot">Hot</div>
-																		</div>
-																		<div class="product-thumb-hover border">
-																			<a href="shop-details.html">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/nk7.jpeg')}}" class="post-image" alt="">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/7-2.jpg')}}" class="hover-image back" alt="">
-																			</a>
-																		</div>		
-																		<div class="product-button">
-																			<div class="btn-add-to-cart" data-title="Add to cart">
-																				<a rel="nofollow" href="#" class="product-btn button">Add to cart</a>
-																			</div>
-																			<div class="btn-wishlist" data-title="Wishlist">
-																				<button class="product-btn">Add to wishlist</button>
-																			</div>
-																			<div class="btn-compare" data-title="Compare">
-																				<button class="product-btn">Compare</button>
-																			</div>
-																			<span class="product-quickview" data-title="Quick View">
-																				<a href="#" class="quickview quickview-button">Quick View <i class="icon-search"></i></a>
-																			</span>		
-																		</div>
-																	</div>
-																	<div class="products-content">
-																		<div class="contents text-center">
-																			<div class="rating">
-																				<div class="star star-0"></div><span class="count">(0 review)</span>
-																			</div>
-																			<h3 class="product-title"><a href="shop-details.html">Diamond Bracelet</a></h3>
-																			<span class="price">
-																				<del aria-hidden="true"><span>$79.00</span></del> 
-																				<ins><span>$50.00</span></ins>
-																			</span>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-																<div class="products-entry clearfix product-wapper">
-																	<div class="products-thumb">
-																		<div class="product-thumb-hover">
-																			<a href="shop-details.html">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/nk4.jpeg')}}" class="post-image" alt="">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/4-2.jpg')}}" class="hover-image back" alt="">
-																			</a>
-																		</div>		
-																		<div class="product-button">
-																			<div class="btn-add-to-cart" data-title="Add to cart">
-																				<a rel="nofollow" href="#" class="product-btn button">Add to cart</a>
-																			</div>
-																			<div class="btn-wishlist" data-title="Wishlist">
-																				<button class="product-btn">Add to wishlist</button>
-																			</div>
-																			<div class="btn-compare" data-title="Compare">
-																				<button class="product-btn">Compare</button>
-																			</div>
-																			<span class="product-quickview" data-title="Quick View">
-																				<a href="#" class="quickview quickview-button">Quick View <i class="icon-search"></i></a>
-																			</span>		
-																		</div>
-																	</div>
-																	<div class="products-content">
-																		<div class="contents text-center">
-																			<div class="rating">
-																				<div class="star star-0"></div><span class="count">(0 review)</span>
-																			</div>
-																			<h3 class="product-title"><a href="shop-details.html">Yilver And Turquoise Earrings</a></h3>
-																			<span class="price">$120.00</span>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-																<div class="products-entry clearfix product-wapper">
-																	<div class="products-thumb">
-																		<div class="product-lable">
-																			<div class="onsale">-10%</div>
-																			<div class="hot">Hot</div>
-																		</div>
-																		<div class="product-thumb-hover border">
-																			<a href="shop-details.html">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/nk8.jpeg')}}" class="post-image" alt="">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/8-2.jpg')}}" class="hover-image back" alt="">
-																			</a>
-																		</div>		
-																		<div class="product-button">
-																			<div class="btn-add-to-cart" data-title="Add to cart">
-																				<a rel="nofollow" href="#" class="product-btn button">Add to cart</a>
-																			</div>
-																			<div class="btn-wishlist" data-title="Wishlist">
-																				<button class="product-btn">Add to wishlist</button>
-																			</div>
-																			<div class="btn-compare" data-title="Compare">
-																				<button class="product-btn">Compare</button>
-																			</div>
-																			<span class="product-quickview" data-title="Quick View">
-																				<a href="#" class="quickview quickview-button">Quick View <i class="icon-search"></i></a>
-																			</span>		
-																		</div>
-																	</div>
-																	<div class="products-content">
-																		<div class="contents text-center">
-																			<div class="rating">
-																				<div class="star star-5"></div><span class="count">(3 review)</span>
-																			</div>
-																			<h3 class="product-title"><a href="shop-details.html">X Hoop Earrings</a></h3>
-																			<span class="price">
-																				<del aria-hidden="true"><span>$200.00</span></del> 
-																				<ins><span>$180.00</span></ins>
-																			</span>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-																<div class="products-entry clearfix product-wapper">
-																	<div class="products-thumb">
-																		<div class="product-lable">
-																			<div class="hot">Hot</div>
-																		</div>
-																		<div class="product-thumb-hover border">
-																			<a href="shop-details.html">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/nk9.avif')}}" class="post-image" alt="">
-																				<img width="600" height="600" src="{{asset('/assets/media/product/9-2.jpg')}}" class="hover-image back" alt="">
-																			</a>
-																		</div>
-																		<div class="product-button">
-																			<div class="btn-add-to-cart" data-title="Add to cart">
-																				<a rel="nofollow" href="#" class="product-btn button">Add to cart</a>
-																			</div>
-																			<div class="btn-wishlist" data-title="Wishlist">
-																				<button class="product-btn">Add to wishlist</button>
-																			</div>
-																			<div class="btn-compare" data-title="Compare">
-																				<button class="product-btn">Compare</button>
-																			</div>
-																			<span class="product-quickview" data-title="Quick View">
-																				<a href="#" class="quickview quickview-button">Quick View <i class="icon-search"></i></a>
-																			</span>		
-																		</div>
-																	</div>
-																	<div class="products-content">
-																		<div class="contents text-center">
-																			<div class="rating">
-																				<div class="star star-4"></div><span class="count">(1 review)</span>
-																			</div>
-																			<h3 class="product-title"><a href="shop-details.html">Yintage Medallion Necklace</a></h3>
-																			<span class="price">$140.00</span>
-																		</div>
-																	</div>
-																</div>
-															</div>
+															@endforeach
 														</div>
 													</div>
+													
 												</div>
-												<div class="tab-pane fade" id="layout-list" role="tabpanel">
+												<!-- <div class="tab-pane fade" id="layout-list" role="tabpanel">
 													<div class="products-list list">
 														<div class="products-entry clearfix product-wapper">
 															<div class="row">
@@ -826,7 +513,7 @@
 															</div>
 														</div>
 													</div>
-												</div>
+												</div> -->
 											</div>
 
 											<nav class="pagination">

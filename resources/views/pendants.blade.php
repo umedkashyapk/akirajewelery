@@ -7,11 +7,11 @@
 							<div class="section-container">
 								<div class="content-title-heading">
 									<h1 class="text-title-heading">
-										Rings
+									Pendants
 									</h1>
 								</div>
 								<div class="breadcrumbs">
-									<a href="index.html">Home</a><span class="delimiter"></span><a href="shop-grid-left.html">Shop</a><span class="delimiter"></span>Bracelets
+									<a href="{{route('home')}}">Home</a><span class="delimiter"><span class="delimiter"></span>Pendants
 								</div>
 							</div>
 						</div>
@@ -161,17 +161,17 @@
 												<div class="tab-pane fade show active" id="layout-grid" role="tabpanel">
 													<div class="products-list grid">
 														<div class="row">
-														@foreach($ring_list as $ring_list)
+														@foreach($pendants_list as $pendants_list)
 															<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
 																<div class="products-entry clearfix product-wapper">
 																	<div class="products-thumb">
 																		<div class="product-lable">
-																			<div class="hot">{{$ring_list->id}}</div>
+																			<div class="hot">{{$pendants_list->id}}</div>
 																		</div>
 																		<div class="product-thumb-hover">
-																			<a href="{{'details/'.$ring_list->id}}">
-																				<img width="600" height="600" src="{{asset('admin/product/'.$ring_list->image)}}" class="post-image" alt="">
-																				<img width="600" height="600" src="{{asset('admin/product/'.$ring_list->image)}}" class="hover-image back" alt="">
+																			<a href="{{'details/'.$pendants_list->id}}">
+																				<img width="600" height="600" src="{{asset('admin/product/'.$pendants_list->image)}}" class="post-image" alt="">
+																				<img width="600" height="600" src="{{asset('admin/product/'.$pendants_list->image)}}" class="hover-image back" alt="">
 																			</a>
 																		</div>		
 																		<div class="product-button">
@@ -194,8 +194,8 @@
 																			<div class="rating">
 																				<div class="star star-0"></div><span class="count">(0 review)</span>
 																			</div>
-																			<h3 class="product-title"><a href="shop-details.html">{{$ring_list->description}}</a></h3>
-																			<span class="price">{{$ring_list->price}}</span>
+																			<h3 class="product-title"><a href="shop-details.html">{{$pendants_list->description}}</a></h3>
+																			<span class="price">{{$pendants_list->price}}</span>
 																		</div>
 																	</div>
 																</div>

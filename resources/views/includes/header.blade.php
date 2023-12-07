@@ -1,14 +1,12 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	
-<!-- Mirrored from caketheme.com/html/mojuri/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Nov 2023 12:13:09 GMT -->
 <head>
 		<!-- Meta Data -->
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Home Collection | Mojuri</title>
+		<title>Home Collection | Akira</title>
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="{{asset('/assets/media/favicon.png')}}">
@@ -32,12 +30,12 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
 	</head>
 	
-	<body class="home home-2 title-2">
+	<body class="home home-7 title-7">
 		<div id="page" class="hfeed page-wrapper">
-			<header id="site-header" class="site-header header-v2">
+			<header id="site-header" class="site-header header-v4 padding-large">
 				<div class="header-mobile">
 					<div class="section-padding">
-						<div class="section-container large">
+						<div class="section-container">
 							<div class="row">
 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3 header-left">
 									<div class="navbar-header">
@@ -46,8 +44,8 @@
 								</div>
 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 header-center">
 									<div class="site-logo">
-										<a href="index2.html">
-											<img width="400" height="79" src="{{asset('/assetsmedia/logo.png')}}" alt="Mojuri – Jewelry Store HTML Template" />
+										<a href="{{route('home')}}">
+											<img width="400" height="79" src="{{asset('/assets/media/logo.png')}}" alt="Akira – Jewelry Store ">
 										</a>
 									</div>
 								</div>
@@ -59,7 +57,7 @@
 												<div class="icons-cart"><i class="icon-large-paper-bag"></i><span class="cart-count">2</span></div>
 											</a>
 											<div class="dropdown-menu cart-popup">
-												<div class="cart-empty-wrap">
+												<div class="cart-empty-wrap" style="display: none;">
 													<ul class="cart-list">
 														<li class="empty">
 															<span>No products in the cart.</span>
@@ -69,19 +67,13 @@
 												</div>
 												<div class="cart-list-wrap">
 													<ul class="cart-list ">
-														<li class="mini-cart-item">
-															<a href="#" class="remove" title="Remove this item"><i class="icon_close"></i></a>
-															<a href="shop-details.html" class="product-image"><img width="600" height="600" src="{{asset('/assetsmedia/product/3.jpg')}}" alt=""></a>
-															<a href="shop-details.html" class="product-name">Twin Hoops</a>		
-															<div class="quantity">Qty: 1</div>
-															<div class="price">$150.00</div>
-														</li>
+														
 														<li class="mini-cart-item">
 															<a href="#" class="remove" title="Remove this item"><i class="icon_close"></i></a>													
-															<a href="shop-details.html" class="product-image"><img width="600" height="600" src="{{asset('/assetsmedia/product/1.jpg')}}" alt=""></a>
+															<a href="shop-details.html" class="product-image"><img width="600" height="600" src="media/product/1.jpg" alt=""></a>
 															<a href="shop-details.html" class="product-name">Medium Flat Hoops</a>
-															<div class="quantity">Qty: 1</div>
-															<div class="price">$100.00</div>						
+															<div class="quantity"> Qty: 1 </div>
+															<div class="price"> $100.00 </div>						
 														</li>
 													</ul>
 													<div class="total-cart">
@@ -93,7 +85,7 @@
 														<div class="total-percent"><div class="percent" style="width:20%"></div></div>
 													</div>
 													<div class="buttons">
-														<a href="shop-cart.html" class="button btn view-cart btn-primary">View cart</a>
+														<a href="" class="button btn view-cart btn-primary">View cart</a>
 														<a href="shop-checkout.html" class="button btn checkout btn-default">Check out</a>
 													</div>
 												</div>
@@ -135,17 +127,8 @@
 						<div class="section-padding">
 							<div class="section-container large p-l-r">
 								<div class="row">
-									<div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 header-left">
-										<div class="header-page-link">
-											<!-- Search -->
-											<div class="search-box">
-												<div class="search-toggle"><i class="icon-search"></i></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 header-center">
-										<div class="site-navigation left">
+									<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 header-left">
+										<div class="site-navigation">
 											<nav id="main-navigation">
 												<ul id="menu-main-menu" class="menu">
 													<li class="level-0 menu-item menu-item-has-children current-menu-item">
@@ -158,7 +141,7 @@
 																<a href="{{route('rings')}}"><span class="menu-item-text">RINGS</span></a>
 																
 															</li><li >
-																<a href="{{route('home')}}"><span class="menu-item-text">PENDANTS</span></a>
+																<a href="{{route('pendants')}}"><span class="menu-item-text">PENDANTS</span></a>
 																
 															</li>
 															<li >
@@ -188,47 +171,33 @@
 															</li>
 														</ul>   
 													</li>
+													<li class="level-0 menu-item ">
+														<a href="{{route('contact')}}"><span class="menu-item-text">Contact</span></a> 
+													</li>
+													<li class="level-0 menu-item ">
+														<a href="{{route('about')}}"><span class="menu-item-text">About Us</span></a> 
+													</li>
 													
-												</ul>
-											</nav>
-										</div>
-
-										<div class="site-logo">
-											<a href="index2.html">
-												<img width="400" height="79" src="{{asset('/assets/media/logo.png')}}" alt="Mojuri – Jewelry Store HTML Template" />
-											</a>
-										</div>
-
-										<div class="site-navigation right">
-											<nav id="main-navigation">
-												<ul id="menu-main-menu" class="menu">
-													<li class="level-0 menu-item menu-item-has-children ">
-														<a href=""><span class="menu-item-text">POLICY</span></a>
-														<ul class="sub-menu">
-															<li>
-																<a href=""><span class="menu-item-text">SHIPPING POLICY</span></a>
-															</li>
-															<li>
-																<a href=""><span class="menu-item-text">RETURNS & REFUNDS</span></a>
-															</li>
-															
-															
-														</ul>
-													</li>
-													<li class="level-0 menu-item 	">
-														<a href="{{route('about')}}"><span class="menu-item-text">ABOUT US</span></a>
-														
-													</li>
-													<li class="level-0 menu-item">
-														<a href="{{route('contact')}}"><span class="menu-item-text">Contact</span></a>
-													</li>
 												</ul>
 											</nav>
 										</div>
 									</div>
 
-									<div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 header-right">
+									<div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 text-center header-center">
+										<div class="site-logo">
+											<a href="{{route('home')}}">
+												<img width="400" height="140" src="{{asset('/assets/media/logo.png')}}" alt="AKIRA – Jewelry Store ">
+											</a>
+										</div>
+									</div>
+
+									<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 header-right">
 										<div class="header-page-link">
+											<!-- Search -->
+											<div class="search-box">
+												<div class="search-toggle"><i class="icon-search"></i></div>
+											</div>
+
 											<!-- Login -->
 											<div class="login-header icon">
 												<a class="active-login" href="#"><i class="icon-user"></i></a>
@@ -242,14 +211,14 @@
 																	<p class="status"></p>
 																	<div class="content">
 																		<div class="username">
-																			<input type="text" required="required" class="input-text" name="username" id="username" placeholder="Your name"/>
+																			<input type="text" required="required" class="input-text" name="username" id="username" placeholder="Your name">
 																		</div>
 																		<div class="password">
-																			<input class="input-text" required="required" type="password" name="password" id="password" placeholder="Password"/>
+																			<input class="input-text" required="required" type="password" name="password" id="password" placeholder="Password">
 																		</div>
 																		<div class="rememberme-lost">
 																			<div class="rememberme">
-																				<input name="rememberme" type="checkbox" id="rememberme" value="forever"/>
+																				<input name="rememberme" type="checkbox" id="rememberme" value="forever">
 																				<label for="rememberme" class="inline">Remember me</label>
 																			</div>
 																			<div class="lost_password">
@@ -257,7 +226,7 @@
 																			</div>
 																		</div>
 																		<div class="button-login">
-																			<input type="submit" class="button" name="login" value="Login"/>
+																			<input type="submit" class="button" name="login" value="Login">
 																		</div>
 																		<div class="button-next-reregister">Create An Account</div>
 																	</div>						
@@ -268,22 +237,13 @@
 																	<h2>REGISTER</h2>
 																	<div class="content">
 																		<div class="email">
-																			<input type="name" class="input-text" placeholder="Name" name="name" id="reg_name" value=""/>
-																		</div>
-																		<div class="email">
-																			<input type="mobile" class="input-text" placeholder="Mobile number" name="mobile" id="reg_mobile" value=""/>
-																		</div>
-																		<div class="email">
-																			<input type="email" class="input-text" placeholder="Email" name="email" id="reg_email" value=""/>
+																			<input type="email" class="input-text" placeholder="Email" name="email" id="reg_email" value="">
 																		</div>
 																		<div class="password">
-																			<input type="password" class="input-text" placeholder="Password" name="password" id="reg_password"/>
-																		</div>
-																		<div class="password">
-																			<input type="Conf.password" class="input-text" placeholder="Conf. Password" name="Conf.password" id="reg_password"/>
+																			<input type="password" class="input-text" placeholder="Password" name="password" id="reg_password">
 																		</div>															
 																		<div class="button-register">
-																			<input type="submit" class="button" name="register" value="Register"/>
+																			<input type="submit" class="button" name="register" value="Register">
 																		</div>
 																		<div class="button-next-login">Already has an account</div>
 																	</div>
@@ -293,7 +253,7 @@
 													</div>
 												</div>
 											</div>
-											
+
 											<!-- Wishlist -->
 											<div class="wishlist-box">
 												<a href="shop-wishlist.html"><i class="icon-heart"></i></a>
@@ -308,7 +268,7 @@
 														<div class="icons-cart"><i class="icon-large-paper-bag"></i><span class="cart-count">2</span></div>
 													</a>
 													<div class="dropdown-menu cart-popup">
-														<div class="cart-empty-wrap">
+														<div class="cart-empty-wrap" style="display: none;">
 															<ul class="cart-list">
 																<li class="empty">
 																	<span>No products in the cart.</span>
@@ -357,3 +317,8 @@
 					</div>
 				</div>
 			</header>
+			<style>
+	.site-main .page-title {
+    background-image: url("{{asset('/assets/media/site-header.jpg')}}");
+}
+</style>

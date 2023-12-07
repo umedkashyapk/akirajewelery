@@ -1,6 +1,5 @@
 @include('includes.header')
 
-
 			<div id="site-main" class="site-main">
 				<div id="main-content" class="main-content">
 					<div id="primary" class="content-area">

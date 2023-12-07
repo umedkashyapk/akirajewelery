@@ -13,9 +13,9 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('/asset/imgs/theme/favicon.svg')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('admin/asset/imgs/theme/favicon.svg')}}">
     <!-- Template CSS -->
-    <link href="{{asset('/asset/css/main.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('admin/asset/css/main.css')}}" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         <header class="main-header style-2 navbar">
             <div class="col-brand">
                 <a href="index.html" class="brand-wrap">
-                    <img src="{{asset('/asset/imgs/theme/logo.svg')}}" class="logo" alt="Evara Dashboard">
+                    <img src="{{asset('admin/asset/imgs/theme/logo.svg')}}" class="logo" alt="Evara Dashboard">
                 </a>
             </div>
         </header>
