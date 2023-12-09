@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\http\Controllers\HomeController;
 use App\http\Controllers\Webcontroller;
 use App\http\Controllers\Admin\DashboardController;
 use App\http\Controllers\Admin\ProductController;
@@ -36,7 +37,8 @@ Route::get('bracelets', [Webcontroller::class, 'bracelets'])->name('bracelets');
 Route::get('necklace', [Webcontroller::class, 'necklace'])->name('necklace');
 Route::get('earring', [Webcontroller::class, 'earring'])->name('earring');
 Route::get('login', [Webcontroller::class, 'login'])->name('login');
-Route::get('details/{id}', [Webcontroller::class, 'details'])->name('cart');
+Route::get('register', [HomeController::class, 'register'])->name('register');
+Route::get('details/{id}', [Webcontroller::class, 'details'])->name('details');
 Route::get('cart', [Webcontroller::class, 'cart'])->name('cart');
 Route::get('addtocart/{id}', [Webcontroller::class, 'addtocart'])->name('addtocart');
 

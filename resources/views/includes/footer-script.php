@@ -1,4 +1,4 @@
-<footer class="main-footer font-xs">
+<footer class="main-footer font-xs" style="margin-top: 60px;">
             <div class="row pb-30 pt-15">
                 <div class="col-sm-6">
                     <script>

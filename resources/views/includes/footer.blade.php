@@ -1,4 +1,4 @@
-<footer id="site-footer" class="site-footer background four-columns">
+<footer id="site-footer" class="site-footer background four-columns" style="margin-top: 31px;">
 				<div class="footer">
 					<div class="section-padding">
 						<div class="section-container">

@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="{{asset('/assets/libs/slick/css/slick.css')}}" type="text/css">
 		<link rel="stylesheet" href="{{asset('/assets/libs/slick/css/slick-theme.css')}}" type="text/css">
 		<link rel="stylesheet" href="{{asset('/assets/libs/mmenu/css/mmenu.min.css')}}" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
 
 		<!-- Site Stylesheet -->
 		<link rel="stylesheet" href="{{asset('/assets/css/app.css')}}" type="text/css">

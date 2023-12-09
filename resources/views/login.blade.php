@@ -35,15 +35,7 @@
 																	<label for="password">Password <span class="required">*</span></label>
 																	<input class="input-text" type="password" name="password">
 																</div>
-																<div class="rememberme-lost">
-																	<div class="remember-me">
-																		<input name="rememberme" type="checkbox" value="forever">
-																		<label class="inline">Remember me</label>
-																	</div>
-																	<div class="lost-password">
-																		<a href="page-forgot-password.html">Create account</a>
-																	</div>
-																</div>
+															
 																<div class="button-login">
 																	<input type="submit" class="button" name="login" value="Login"> 
 																</div>
